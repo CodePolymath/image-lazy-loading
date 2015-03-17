@@ -38,7 +38,6 @@ body {font-family: 'Trebuchet MS',Arial, sans-serif;}
 	max-width:400px;
 	max-height:400px;
 	margin: 0 10px;
-	float:left;
 	position: relative;
 	display: inline-block;
 }
