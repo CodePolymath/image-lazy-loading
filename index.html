@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flickr API - Lazy Loading</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+	<script src="scripts/main.js" type="text/javascript"></script>
+</head>
+<body>
+	<div>
+		<h2>This page uses lazy-loading of images to continually update your search results from Flickr. Click and hold the arrow to scroll to the right to get new images downloaded &quot;behind the scenes...&quot;</h2>
+		<div>Search Flickr for your favorite photos:</div>
+		<input type="text" class="watermark gray" data-watermark="Enter a search term" value="kittens">
+		<button id="btnSearch" type="button">Search</button>
+		<span id="spnWarning">Please enter a search term</span>
+		<span id="gesture"></span>
+		<span id="pos"></span>
+		<span id="count"></span>
+	</div>
+	<div id="divContent">
+		<a id="btnRight" class="arrow right displayNone" title="Click or hold to scroll">
+		</a>
+		<a id="btnLeft" class="arrow left displayNone" title="Click or hold to scroll">
+		</a>
+		<div id="divPhotoDisplay">
+			<div id="divPhotoWrap"></div>
+		</div>
+	</div>
+</body>
+</html>
